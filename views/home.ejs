@@ -1,0 +1,25 @@
+<h1 class="font-red">Home</h1>
+<a href="/about">About</a>
+<table>
+    <thead>
+        <p>컴퍼니 테이블</p>
+    </thead>
+    <tr>
+        <th>타이틀</th>
+        <th>내용</th>
+        <th>작성일</th>
+    </tr>
+    <% list.forEach(function(item, index){%>
+        <tr>
+            <td>
+                <%= item.title%>
+            </td>
+            <th>
+                <%= item.content%>
+            </th>
+            <th>
+                <%= item.wdate%>
+            </th>
+        </tr>
+        <%});%>
+</table>
